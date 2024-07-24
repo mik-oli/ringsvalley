@@ -7,14 +7,12 @@
         <meta name="author" content="Mik_oli">
 
         <link rel="stylesheet" href="index.css" type="text/css">
-        <script src="placeholderLoader.js"></script>
     </head>
 
     <body>
         <div id="container">
             <div id="header">
                 <div id="button-container">
-                    <!-- <button class="header-button header-button-nolink" onclick="loadPlaceholder('main-page')">Home</button> -->
                     <a href="index.html" class="header-button link header-button-link">Home</a>
                     <a href="rules.html" class="header-button link header-button-link">Regulamin</a>
                     <a href="" target="_blank" class="header-button link header-button-link">Mapa</a>
@@ -25,21 +23,7 @@
                 </div>
             </div>
             <div id="content">
-                <div class="text-box" id="main-page" style="display: block">
-                    <h2 style="text-align: center;">Rings Valley</h2>
-                    Rings Valley jest serwerem minecraft opartym na uniwersum Władcy Pierścieni. Rozgrywka skupia się wokół 4 frakcji z uniwersum LOTR - Mordoru, Angmaru, Ereboru oraz Gondoru - które walczą między sobą o dominacje w Śródziemiu.
-                    Frakcje mogą dowlonie zawierać sojusze między sobą, niekoniecznie zgodnie z fabułą uniwersum, jednak muszą utrzymywać z fabułą Włądcy Pierścieni związek. Pomagają im w tym stworzeone customowe przemioty m. in. bronie oraz zbroje, czy pierścienie dające osobom im noszącym specjalne efekty.<br><br>
-                    Serwer zbudowany jest na autorskich pomysłach i mechanikach z zapleczem autorskiego texturepacka i datapacka oraz serią autorskich pluginów stworzonych specjalnie na potrzeby serwera. Samo Śródziemie jest odwzorowane na autorskiej mapie, która wiernie stara się przypominać tą znaną z filmów i książek.
-                    <h2 style="text-align: center;">Jak dołączyć?</h2>
-                    Serwer jest obięty white listą, dlatego aby się na niego dostać należy spełnić 3 warunki. Czyli:
-                    <ol style="text-align: left;">
-                        <li>Posiadać minecraft permium (non premium nie zadziała).</li>
-                        <li>Dołączyć na serwer discord RingsValley - link do zaproszenia znajduje się pod przyciskiem na górze strony.</li>
-                        <li>Zapoznać się tam z zasadami oraz wypełnić formularz aplikacyjny z kilkoma prostymi pytaniami.</li>
-                    </ol>
-                    Tyle wystarczy aby dołączyć do rozgrywki.
-                </div>
-                <div class="text-box" id="rules-page" style="display: none">
+                <div class="text-box" id="rules-page">
                     <h2 style="text-align: center;">Regulamin serwera minecraft</h2>
                     <ol>
                         <li>Nieznajomość regulaminu nie zwalnia z jego przestrzegania.</li>
@@ -86,25 +70,6 @@
                         <li>Zakazane jest tworzenie maszyn lagujących/psujących balans. Wszelkie farmy są dozwolone jeśli są zbudowane w odpowiednim stylu lub ukryte.</li>
                     </ol> 
                     <h4 style="text-align: center;">Regulamin może ulec zmianie w dowolnym momencie bez wcześniejszego uprzedzenia o tym fakcie graczy.</h4>
-                </div>
-                <div class="text-box" id="items-page" style="display: none">
-                    <h2 style="text-align: center;">Customowe Przedmioty</h2>
-                    Na serwerze dodane są customowe przedmioty w postaci zbroji, broni, narzędzi, banerów oraz innych przedmiotów. Część z nich można scraftować zgodnie z zasadą opisaną niżej, natomiast inne są do zdobycia jako drop bądź z eventów.<br>
-                    Customowe przedmioty można scraftować używając zwykłego przedmiotu oraz dodając do niego barwnik frakcji. Przedmiot musi znajdować się w lewym górnym rogu craftingu (crafting table, nie craftingu w ekwipunku), natomiast barwnik w następnych slotach. Slot, w którym zostanie położony barwnik, wpływa na to jaki wygląd przyjmie przedmiot.<br>
-                    Przy customowych przedmiotach nie należy kierować się oryginalnymi opisami przedmiotów. Np. jeśli na customowej zbroi pokazuje że jest to zbroja skórzana lub kolczuga, nie oznacza to że tak działa, gdyż pomimo swojego opisu może działać jak żelazna, diamentowa, czy netheritowa. Zasada jak wyżej dotyczy również stopnia zużycia. Jeśli przedmiot w opisie ma podane durability kolorem fioletowym, to to jest faktyczny poziom zużycia.
-                </div>
-                <div class="text-box" id="factions-page" style="display: none">
-                    <h2 style="text-align: center;">Frakcje i claimy</h2>
-                    Funkcjonują 3 rodzaje claimów: core, outpost, neutral outpost oraz common claim (w różnych rozmiarach). Zasada działania frakcji jest podobna do mechaniki z total warów.<br>
-                    Core claim - claim zabezpieczający core frakcji, osoby spoza frakcji nie mogą w niego ingerować dopóki dana frakcja posiada outposty. Zniszczenie core claima oznacza upadek frakcji.<br>
-                    Outpost claim - outposty chronią core frakcji przed upadkiem, są tak samo ważne strategicznie jak core; są z góry określone na mapie.<br>
-                    Neutral outpost - naturalny outpost, można go przejąć dla swojej frakcji, zmieniając go w zwykły outpost; są z góry określone na mapie.<br>
-                    Common claim - zwykły claim zabezpieczający teren przed innymi frakcjami, muszą przylegać do innych claimów.<br>
-                    Claimowanie odbywa się przez postawienie claim flagi, natomiast odclaimowanie, lub przejęcie claima przez inną frakcję przez zniszczenie claim flagi. Przejmować claimy mogą tylko frakcje będące ze sobą w wojnie.<br>
-                    Claimować mogą tylko oficerowie i liderzy frakcji, natomiast przejmować claimy w czasie wojny mogą wszyscy członkowie.<br>
-                    Claim flagi nie posiadają żadnej własnej ochrony, dlatego to od graczy zależy ich obrona. (Są naturalnie chronione przed naturalnymi zniszczeniami - flagi, nie teren)<br>
-                    Dokładna lokalizacja claim flagi dostępne jest po wpisaniu komendy /factions claim-info na terenie danego claima.<br>
-                    Wszystkie komendy dotyczące frakcji wraz z opisem znajdują się pod komendą /factions lub /factions help
                 </div>
             </div>
             <div id="footer">
